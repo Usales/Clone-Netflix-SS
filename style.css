@@ -1,0 +1,52 @@
+body {
+    font-family: "profile-gate-label", sans-serif;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adiciona um leve brilho em torno da imagem */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 30px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-weight: bolder;
+}
+
+
+.btn:hover img { /* Efeito de neon quando passar o mouse (hover) */
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover p {
+    color: rgb(255, 255, 255); /* Altera a cor do texto do nome do botão durante o hover */
+}
